@@ -75,6 +75,13 @@ public class Main {
 		System.out.println("Calculating the wages of EmployeePrivateConstructor " + e4.calculateWage());
 		System.out.println("Calculating the wages of EmployeePrivateConstructor with Bonus " + e4.calculatePerformance(5000));
 
+		//Static
+		var e5 = new EmployeePrivateStatic(30000,10,10);
+		var e6 = new EmployeePrivateStatic(30000,10,20);
+		System.out.println("No of Employees from Static Class: " + EmployeePrivateStatic.numberOfEmployees);
+
+		//StaticMethod
+		EmployeePrivateStatic.printNoOfEmployees();
 
 	}
 }
