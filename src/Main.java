@@ -52,5 +52,14 @@ public class Main {
 		System.out.println(wage);
 		int performance = e1.calculatePerformance(20000);
 		System.out.println(performance);
+
+		//Encapsulation Private methods for the Employee class
+		EmployeePrivate e2 = new EmployeePrivate();
+		e2.setBaseSalary(10);
+//		e2.getBaseSalary();
+		e2.setHourlyRate(50);
+//		e2.getHourlyRate();
+		e2.extraHours = 10;
+		System.out.println(e2.calculateWage());
 	}
 }
