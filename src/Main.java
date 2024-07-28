@@ -49,17 +49,26 @@ public class Main {
 		e1.hourlyRate = 10;
 		e1.extraHours = 10;
 		int wage = e1.calculateWage();
-		System.out.println(wage);
+		System.out.println("Calculating the wages of Employee " + wage);
 		int performance = e1.calculatePerformance(20000);
-		System.out.println(performance);
+		System.out.println("Calculating the wages of Employee with Bonus " + performance);
 
 		//Encapsulation Private methods for the Employee class
 		EmployeePrivate e2 = new EmployeePrivate();
-		e2.setBaseSalary(10);
+		e2.setBaseSalary(30000);
 //		e2.getBaseSalary();
-		e2.setHourlyRate(50);
+		e2.setHourlyRate(10);
 //		e2.getHourlyRate();
 		e2.extraHours = 10;
-		System.out.println(e2.calculateWage());
+		System.out.println("Calculating the wages of EmployeePrivate " + e2.calculateWage());
+
+		//Abstraction means Reducing complexity by hiding unnecessary details
+		EmployeePrivateAbsraction e3 = new EmployeePrivateAbsraction();
+		e3.setBaseSalary(30000);
+		e3.setHourlyRate(10);
+		e3.extraHours = 10;
+		System.out.println("Calculating the wages of EmployeePrivateAbstraction " + e3.calculateWage());
+		System.out.println("Calculating the wages of EmployeePrivateAbstraction with Bonus " + e3.calculatePerformance(30000));
 	}
 }
+
