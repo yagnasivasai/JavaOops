@@ -42,5 +42,15 @@ public class Main {
 		var textBox4 = textBox3;
 		textBox4.setText("box3");
 		System.out.println(textBox3.text);
+
+		//Encapsulation
+		Employee e1 = new Employee();
+		e1.baseSalary = 30000;
+		e1.hourlyRate = 10;
+		e1.extraHours = 10;
+		int wage = e1.calculateWage();
+		System.out.println(wage);
+		int performance = e1.calculatePerformance(20000);
+		System.out.println(performance);
 	}
 }
