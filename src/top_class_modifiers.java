@@ -21,6 +21,8 @@ abstract class top_class_abstract_modifier{
     public abstract int method1();
 
 }
+
+// if child class implements all the methods from the parent class then the child class don't have to become abstract class otherwise child class should become abstract class
 class child_class_abstract_modifier extends top_class_abstract_modifier{
     @Override
     public int method1() {
