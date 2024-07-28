@@ -69,6 +69,13 @@ public class Main {
 		e3.extraHours = 10;
 		System.out.println("Calculating the wages of EmployeePrivateAbstraction " + e3.calculateWage());
 		System.out.println("Calculating the wages of EmployeePrivateAbstraction with Bonus " + e3.calculatePerformance(30000));
+
+		//Abstraction using Custom constructor
+		var e4 = new EmployeePrivateConstructor(30000,10,10);
+		System.out.println("Calculating the wages of EmployeePrivateConstructor " + e4.calculateWage());
+		System.out.println("Calculating the wages of EmployeePrivateConstructor with Bonus " + e4.calculatePerformance(5000));
+
+
 	}
 }
 
