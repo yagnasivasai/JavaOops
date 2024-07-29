@@ -1,14 +1,16 @@
 /**
  * 
  */
-
 /**
  * @author YSS
  *
  */
-
 public class Main {
+	//MortagageCaculator
+	final static byte MONTHS_IN_YEAR = 12;
+	final static byte PERCENT = 100;
 
+	//MainMethod
 	public static void main(String[] args) {
 		Dog dd = new Dog();
 		dd.makeSound();
@@ -82,6 +84,14 @@ public class Main {
 
 		//StaticMethod
 		EmployeePrivateStatic.printNoOfEmployees();
+
+		//MortagageCaculator
+		int principal = (int) com.codewithmosh.Console.readNumber("Principal: ", 1000, 1_000_000);
+		float annualInterest = (float) com.codewithmosh.Console.readNumber("Annual Interest Rate: ", 1, 30);
+		byte years = (byte) com.codewithmosh.Console.readNumber("Period (Years): ", 1, 30);
+
+		com.codewithmosh.MortagageReport.printMortgage(principal, annualInterest, years);
+		com.codewithmosh.MortagageReport.printPaymentSchedule(principal, annualInterest, years);
 
 	}
 }
